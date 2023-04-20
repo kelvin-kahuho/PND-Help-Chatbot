@@ -2,12 +2,157 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Respond to greet intent
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to goodbye intent
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Respond to thanks intent
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Respond to affirm intent
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Respond to deny intent
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Respond to symptoms intent
+  steps:
+  - intent: symptoms
+  - action: utter_symptoms
+
+- rule: Respond to common intent
+  steps:
+  - intent: common
+  - action: utter_common
+
+- rule: Respond to risk_factors intent
+  steps:
+  - intent: risk_factors
+  - action: utter_risk_factors
+
+- rule: Respond to prevention intent
+  steps:
+  - intent: prevention
+  - action: utter_prevention
+
+- rule: Respond to difference intent
+  steps:
+  - intent: difference
+  - action: utter_difference
+
+- rule: Respond to diagnosis intent
+  steps:
+  - intent: diagnosis
+  - action: utter_diagnosis
+
+- rule: Respond to impact intent
+  steps:
+  - intent: impact
+  - action: utter_impact
+
+- rule: Respond to treatment intent
+  steps:
+  - intent: treatment
+  - action: utter_treatment
+
+- rule: Respond to therapy intent
+  steps:
+  - intent: therapy
+  - action: utter_therapy
+
+- rule: Respond to natural_remedies intent
+  steps:
+  - intent: natural_remedies
+  - action: utter_natural_remedies
+
+- rule: Respond to duration intent
+  steps:
+  - intent: duration
+  - action: utter_duration
+
+- rule: Respond to recurrence intent
+  steps:
+  - intent: recurrence
+  - action: utter_recurrence
+
+- rule: Respond to support_partner intent
+  steps:
+  - intent: support_partner
+  - action: utter_support_partner
+
+- rule: Respond to support_family intent
+  steps:
+  - intent: support_family
+  - action: utter_support_family
+
+- rule: Respond to support_friend intent
+  steps:
+  - intent: support_friend
+  - action: utter_support_friend
+
+- rule: Respond to find_therapist intent
+  steps:
+  - intent: find_therapist
+  - action: utter_find_therapist
+
+- rule: Respond to not_happy intent
+  steps:
+  - intent: not_happy
+  - action: utter_not_happy
+
+- rule: Respond to bonding_issues intent
+  steps:
+  - intent: bonding_issues
+  - action: utter_bonding_issues
+
+- rule: Respond to anxiety intent
+  steps:
+  - intent: anxiety
+  - action: utter_anxiety
+
+- rule: Respond to sleep_issues intent
+  steps:
+  - intent: sleep_issues
+  - action: utter_sleep_issues
+
+- rule: Respond to guilt intent
+  steps:
+  - intent: guilt
+  - action: utter_guilt
+
+- rule: Respond to no_medication intent
+  steps:
+  - intent: no_medication
+  - action: utter_no_medication
+
+- rule: Respond to impact_baby intent
+  steps:
+  - intent: impact_baby
+  - action: utter_impact_baby
+
+- rule: Respond to no_talk intent
+  steps:
+  - intent: no_talk
+  - action: utter_no_talk
+
+- rule: Respond to no_support intent
+  steps:
+  - intent: no_support
+  - action: utter_no_support
+
+- rule: Respond to trouble_care intent
+  steps:
+  - intent: trouble_care
+  - action: utter_trouble_care

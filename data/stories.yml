@@ -1,30 +1,189 @@
 version: "3.1"
 
 stories:
+  # greet
+  - story: greet
+    steps:
+    - intent: greet
+    - action: utter_greet
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  # goodbye
+  - story: goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  # thanks
+  - story: thanks
+    steps:
+    - intent: thanks
+    - action: utter_thanks
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  # affirm
+  - story: affirm
+    steps:
+    - intent: affirm
+    - action: utter_affirm
+
+  # deny
+  - story: deny
+    steps:
+    - intent: deny
+    - action: utter_deny
+
+  # symptoms
+  - story: symptoms
+    steps:
+    - intent: symptoms
+    - action: utter_symptoms
+
+  # common
+  - story: common
+    steps:
+    - intent: common
+    - action: utter_common
+
+  # risk factors
+  - story: risk_factors
+    steps:
+    - intent: risk_factors
+    - action: utter_risk_factors
+
+  # prevention
+  - story: prevention
+    steps:
+    - intent: prevention
+    - action: utter_prevention
+
+  # difference
+  - story: difference
+    steps:
+    - intent: difference
+    - action: utter_difference
+
+  # diagnosis
+  - story: diagnosis
+    steps:
+    - intent: diagnosis
+    - action: utter_diagnosis
+
+  # impact
+  - story: impact
+    steps:
+    - intent: impact
+    - action: utter_impact
+
+  # treatment
+  - story: treatment
+    steps:
+    - intent: treatment
+    - action: utter_treatment
+
+  # therapy
+  - story: therapy
+    steps:
+    - intent: therapy
+    - action: utter_therapy
+
+  # natural remedies
+  - story: natural_remedies
+    steps:
+    - intent: natural_remedies
+    - action: utter_natural_remedies
+
+  # duration
+  - story: duration
+    steps:
+    - intent: duration
+    - action: utter_duration
+
+  # recurrence
+  - story: recurrence
+    steps:
+    - intent: recurrence
+    - action: utter_recurrence
+
+  # support partner
+  - story: support_partner
+    steps:
+    - intent: support_partner
+    - action: utter_support_partner
+
+  # support family
+  - story: support_family
+    steps:
+    - intent: support_family
+    - action: utter_support_family
+
+  # support friend
+  - story: support_friend
+    steps:
+    - intent: support_friend
+    - action: utter_support_friend
+
+  # find therapist
+  - story: find_therapist
+    steps:
+    - intent: find_therapist
+    - action: utter_find_therapist
+
+  # not happy
+  - story: not_happy
+    steps:
+    - intent: not_happy
+    - action: utter_not_happy
+
+  # bonding issues
+  - story: bonding_issues
+    steps:
+    - intent: bonding_issues
+    - action: utter_bonding_issues
+
+  # anxiety
+  - story: anxiety
+    steps:
+    - intent: anxiety
+    - action: utter_anxiety
+
+  # sleep issues
+  - story: sleep_issues
+    steps:
+    - intent: sleep_issues
+    - action: utter_sleep_issues
+
+  # guilt
+  - story: guilt
+    steps:
+    - intent: guilt
+    - action: utter_guilt
+  
+  #no medication
+  - story: no medication
+    steps:
+    - intent: no_medication
+    - action: utter_no_medication
+  
+  #impact baby
+  - story: impact baby
+    steps:
+    - intent: impact_baby
+    - action: utter_impact_baby
+
+  #no talk
+  - story: no talk
+    steps:
+    - intent: no_talk
+    - action: utter_no_talk
+
+  #no support
+  - story: no support
+    steps:
+    - intent: no_support
+    - action: utter_no_support
+  
+  #trouble care
+  - story: trouble care
+    steps:
+    - intent: trouble_care
+    - action: utter_trouble_care
+ 

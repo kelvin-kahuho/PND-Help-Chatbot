@@ -1,91 +1,267 @@
 version: "3.1"
 
 nlu:
+
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Hi
+    - Hello
+    - Hey
+    - Good morning
+    - Good afternoon
+    - Good evening
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Bye
+    - Goodbye
+    - See you later
+    - See you soon
+    - Talk to you later
+    - Take care
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - I appreciate it
+    Much appreciates
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Yes
+    - Yeah
+    - Sure
+    - Absolutely
+    - Of course
+    - I agree
+    - That's right
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
+    - No
+    - Nope
     - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - That's not right
+    - I disagree
 
-- intent: mood_great
+- intent: symptoms
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What are the symptoms of postnatal depression?
+    - How can I tell if I have postnatal depression?
+    - What are the signs of postnatal depression?
+    - What are the common symptoms of postnatal depression?
+    - What are the symptoms of PND?
+    - What are the signs of PND?
+    - How do I know if I have PND?
+    - What are the common symptoms of PND?
+    - What should I look out for?
 
-- intent: mood_unhappy
+- intent: common
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - How common is postnatal depression?
+    - What is the prevalence of postnatal depression?
+    - Is postnatal depression common?
+    - How many women are affected by postnatal depression?
+    - What are the common causes of PND?
+    - How common is PND?
+    - What are the risk factors for PND?
+    - What are the common triggers for PND?
+    - What are the common effects of PND?
 
-- intent: bot_challenge
+- intent: risk_factors
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - What are the risk factors for postnatal depression?
+    - Who is at risk for postnatal depression?
+    - Are there any factors that increase the risk of postnatal depression?
+    - What increases the likelihood of postnatal depression?
+    - What are the risk factors for PND?
+    - Who is at risk of developing PND?
+    - Are there any factors that increase the risk of PND?
+    - What are the common risk factors for PND?
+
+- intent: prevention
+  examples: |
+    - How can I prevent postnatal depression?
+    - What can I do to reduce my risk of postnatal depression?
+    - Are there any ways to avoid postnatal depression?
+    - What are some preventative measures for postnatal depression?
+    - How can PND be prevented?
+    - What can I do to prevent PND?
+    - Are there any preventive measures for PND?
+    - How can I reduce my risk of developing PND?
+
+- intent: difference
+  examples: |
+    - What is the difference between PND and baby blues?
+    - How is PND different from baby blues?
+    - What are the distinguishing features of PND?
+    - How can I tell if I have PND or baby blues?
+
+- intent: diagnosis
+  examples: |
+    - How is PND diagnosed?
+    - What are the diagnostic criteria for PND?
+    - What tests are used to diagnose PND?
+    - How do I know if I have PND?
+
+
+- intent: impact
+  examples: |
+    - What is the impact of PND on the mother?
+    - How does PND affect the mother?
+    - What are the consequences of PND?
+    - How does PND impact daily life?
+
+- intent: treatment
+  examples: |
+    - How is postnatal depression treated?
+    - What are the treatment options for postnatal depression?
+    - Can postnatal depression be cured?
+    - What is the best treatment for postnatal depression?
+    - How is PND treated?
+    - What are the treatment options for PND?
+    - What are the different types of treatment for PND?
+    - What kind of treatment is recommended for PND?
+
+- intent: therapy
+  examples: |
+    - What kind of therapy is used for PND?
+    - How does therapy help with PND?
+    - What are the benefits of therapy for PND?
+    - What is involved in therapy for PND?
+
+- intent: natural_remedies
+  examples: |
+    - Are there any natural remedies for PND?
+    - What are some natural ways to treat PND?
+    - How effective are natural remedies for PND?
+    - Can natural remedies be used alongside medication?
+
+- intent: duration
+  examples: |
+    - How long will this take?
+    - What's the duration of the program?
+    - How many weeks will it take?
+    - How long is the course?
+    - Can you tell me how long this will last?
+
+- intent: recurrence
+  examples: |
+    - How often will we meet?
+    - Will this be a recurring meeting?
+    - How frequently will we have these sessions?
+    - Is this a one-time session or a recurring one?
+    - How many times will we meet?
+
+- intent: support_partner
+  examples: |
+    - How can my partner support me?
+    - How do I get my partner to understand what I'm going through?
+    - Can you give me some advice on how to talk to my partner?
+    - How do I get my partner involved in my treatment?
+    - What can my partner do to help me through this?
+
+- intent: support_family
+  examples: |
+    - How can my family support me?
+    - Can you give me some advice on how to talk to my family about this?
+    - How do I get my family involved in my treatment?
+    - What can my family do to help me through this?
+    - How do I deal with family members who don't understand?
+
+- intent: support_friend
+  examples: |
+    - How can my friends support me?
+    - Can you give me some advice on how to talk to my friends about this?
+    - How do I get my friends involved in my treatment?
+    - What can my friends do to help me through this?
+    - How do I deal with friends who don't understand?
+
+- intent: find_therapist
+  examples: |
+    - How do I find a therapist?
+    - Can you recommend a therapist?
+    - What's the best way to find a therapist?
+    - How do I know if a therapist is right for me?
+    - How do I choose a therapist?
+
+- intent: not_happy
+  examples: |
+    - I'm not happy with my treatment
+    - I'm not happy with how things are going
+    - I'm not satisfied with the progress
+    - This isn't working for me
+    - I'm not feeling better
+
+- intent: bonding_issues
+  examples: |
+    - I'm having trouble bonding with my baby
+    - How do I bond with my baby?
+    - Why am I not bonding with my baby?
+    - What can I do to improve my bond with my baby?
+    - How important is bonding with my baby?
+
+- intent: anxiety
+  examples: |
+    - I'm feeling anxious
+    - How do I cope with anxiety?
+    - What can I do to reduce my anxiety?
+    - How can I manage my anxiety?
+    - Can you recommend some anxiety-reducing techniques?
+
+- intent: sleep_issues
+  examples: |
+    - I'm having trouble sleeping
+    - How can I improve my sleep?
+    - What can I do to get better sleep?
+    - How important is sleep for mental health?
+    - Can you recommend some sleep aids?
+
+- intent: guilt
+  examples: |
+    - I'm feeling guilty
+    - How can I deal with my guilt?
+    - What can I do to reduce my guilt?
+    - How do I stop feeling guilty?
+    - Can you recommend some guilt-reducing techniques?
+
+- intent: no_medication
+  examples: |
+    - I don't want to take medication
+    - I prefer not to take any medicine
+    - Medication is not for me
+    - I am not interested in taking medication
+    - I want to avoid taking medication
+
+- intent: impact_baby
+  examples: |
+    - How will this affect my baby?
+    - Can this harm my baby?
+    - What are the risks to my baby?
+    - I am worried about my baby's health
+    - Will this have any impact on my baby's development?
+
+- intent: no_talk
+  examples: |
+    - I don't feel like talking
+    - I am not in the mood for conversation
+    - Talking is not helping me right now
+    - I don't want to discuss this further
+    - Can we talk about something else?
+
+- intent: no_support
+  examples: |
+    - I don't need any help
+    - I am fine on my own
+    - I can handle this by myself
+    - I don't want any support
+    - Please don't offer me any assistance
+
+- intent: trouble_care
+  examples: |
+    - I am having trouble taking care of myself
+    - I need help with my daily tasks
+    - I am struggling to take care of myself
+    - Can you suggest some ways to take better care of myself?
+    - What can I do to improve my self-care?

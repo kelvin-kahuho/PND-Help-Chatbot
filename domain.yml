@@ -3,31 +3,145 @@ version: "3.1"
 intents:
   - greet
   - goodbye
+  - thanks
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - symptoms
+  - common
+  - risk_factors
+  - prevention
+  - difference
+  - diagnosis
+  - impact
+  - treatment
+  - therapy
+  - natural_remedies
+  - duration
+  - recurrence
+  - support_partner
+  - support_family
+  - support_friend
+  - find_therapist
+  - not_happy
+  - bonding_issues
+  - anxiety
+  - sleep_issues
+  - guilt
+  - no_medication
+  - impact_baby
+  - no_talk
+  - no_support
+  - trouble_care
+
+entities:
+  - symptom
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+  - text: "Hello! How can I assist you today?"
+  
   utter_goodbye:
-  - text: "Bye"
+  - text: "Goodbye! Take care of yourself and your baby."
+  
+  utter_thanks:
+  - text: "You're welcome! I'm here to help anytime."
+  
+  utter_affirm:
+  - text: "I understand. Is there anything else you'd like to talk about?"
+  
+  utter_deny:
+  - text: "That's okay. Let's try something else. What else can I help you with?"
+  
+  utter_symptoms:
+  - text: "Some common symptoms of PND include sadness, irritability, fatigue, and difficulty bonding with your baby. Have you been experiencing any of these?"
+  
+  utter_common:
+  - text: "PND is actually quite common, affecting around 1 in 7 mothers. You're not alone, and it's nothing to be ashamed of."
+  
+  utter_risk_factors:
+  - text: "There are many risk factors for PND, including hormonal changes, sleep deprivation, and a history of depression. Would you like to learn more?"
+  
+  utter_prevention:
+  - text: "While there's no surefire way to prevent PND, there are things you can do to reduce your risk, like getting enough sleep, eating well, and staying active. Would you like more information?"
+  
+  utter_difference:
+  - text: "PND is similar to other forms of depression, but it's specifically related to the experience of having a new baby. Would you like to learn more about the differences?"
+  
+  utter_diagnosis:
+  - text: "A diagnosis of PND typically involves a physical exam, a review of your symptoms, and possibly a questionnaire. Would you like to learn more about the diagnosis process?"
+  
+  utter_impact:
+  - text: "PND can have a significant impact on your life, but with the right treatment and support, it's possible to recover. Would you like to learn more?"
+  
+  utter_treatment:
+  - text: "There are many effective treatments for PND, including therapy, medication, and self-care techniques. Would you like more information?"
+  
+  utter_therapy:
+  - text: "Therapy can be an effective way to manage PND, and there are many different types of therapy to choose from. Would you like to learn more?"
+  
+  utter_natural_remedies:
+  - text: "While natural remedies aren't a substitute for professional treatment, they can be a helpful complement to other therapies. Would you like more information?"
+  
+  utter_duration:
+  - text: "The duration of PND can vary depending on the individual, but with proper treatment and support, most women recover within several months to a year. Would you like more information?"
+  
+  utter_recurrence:
+  - text: "Unfortunately, women who have experienced PND in the past are at a higher risk for recurrence with subsequent pregnancies. However, with the right treatment and support, it's possible to manage the risk. Would you like more information?"
+  
+  utter_support_partner:
+  - text: "It's important for partners to provide support during PND, and there are many ways to do so. Would you like some tips on how to support your partner?"
+  
+  utter_support_family:
+  - text: "Family support can be crucial during PND, and there are many ways for family members to provide help and support. Would you like more information?"
+  
+  utter_support_friend:
+  - text: "It's great to have supportive friends. It sounds like you're doing a good job reaching out for help. Is there anything specific you'd like to talk about?"
+  - text: "Friends can be a great source of support. What kind of support are you looking for?"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_find_therapist:
+  - text: "Finding a therapist can be a good step towards feeling better. Would you like me to help you find someone in your area?"
+  - text: "Talking to a therapist can be really helpful. I can help you find someone if you'd like."
+
+  utter_not_happy:
+  - text: "I'm sorry to hear that you're feeling unhappy. Would you like to talk about what's been bothering you?"
+  - text: "Feeling unhappy can be really difficult. What's been going on?"
+
+  utter_bonding_issues:
+  - text: "Bonding with a new baby can be a challenge. It's important to remember that it takes time and practice. Is there anything specific that's been difficult for you?"
+  - text: "Many new mothers struggle with bonding at first. What's been going on for you?"
+
+  utter_anxiety:
+  - text: "It sounds like you might be experiencing anxiety. Have you talked to a doctor or therapist about this?"
+  - text: "Anxiety is a common symptom of PND. Have you been getting any support or treatment for it?"
+
+  utter_sleep_issues:
+  - text: "Sleep problems can be really tough to deal with, especially when you're already dealing with PND. Have you talked to a doctor or therapist about this?"
+  - text: "Getting enough sleep is really important for your mental health. Have you tried any strategies for improving your sleep?"
+
+  utter_guilt:
+  - text: "It's common for mothers with PND to feel guilty, but it's important to remember that you're doing the best you can. Is there anything specific that's been making you feel guilty?"
+  - text: "Guilt is a common symptom of PND, but it's important to remember that you're not alone. What's been going on for you?"
+
+  utter_no_medication:
+  - text: "It's understandable that you might not want to take medication, but it can be a helpful part of treatment for some people. Have you talked to a doctor or therapist about alternative treatment options?"
+  - text: "Medication isn't the right choice for everyone, but it can be a helpful part of treatment for some people. Have you discussed your concerns with a doctor or therapist?"
+
+  utter_impact_baby:
+  - text: "PND can have an impact on your relationship with your baby, but it's important to remember that with treatment, things can get better. What kind of impact has it been having on you and your baby?"
+  - text: "PND can be really tough on both mothers and babies, but there is help available. What kind of impact has it been having on your relationship with your baby?"
+
+  utter_no_talk:
+  - text: "It's okay if you don't feel like talking right now. Is there anything else I can help you with?"
+  - text: "It's important to take things at your own pace. Is there anything else you'd like to talk about?"
+
+  utter_no_support:
+  - text: "It's tough when you don't feel like you have support. Is there anything specific that you're looking for?"
+  - text: "Support can be really helpful in dealing with PND. Is there anything I can help you with?"
+
+  utter_trouble_care:
+  - text: "It sounds like you might be having a tough time caring for yourself and your baby right now. Is there anything specific that you're struggling with?"
+  - text: "Caring for a new baby is challenging, especially when dealing with PND. What kind of difficulties have you been experiencing?"
+
 
 session_config:
   session_expiration_time: 60
