@@ -7,6 +7,7 @@ nlu:
     - Hi
     - Hello
     - Hey
+    - Hallo
     - Good morning
     - Good afternoon
     - Good evening
@@ -25,7 +26,48 @@ nlu:
     - Thanks
     - Thank you
     - I appreciate it
-    Much appreciates
+    - Much appreciates
+    - That's helpful
+    - Thanks for the help
+
+- intent: about
+  examples: |
+    - Who are you?
+    - What are you?
+    - Who am I speaking to?
+
+- intent: help
+  examples: |
+    - Give me a hand please
+    - Can you help
+    - I need support
+    - I need help
+    - Support me please
+
+- intent: ppd
+  examples: |
+    - What is PPD?
+    - What is postpartum depression?
+    - ppd
+    - postpartum depression
+
+- intent: diagnosis
+  examples: |
+    - How is PND diagnosed?
+    - What are the diagnostic criteria for PND?
+    - What tests are used to diagnose PND?
+    - How do I know if I have PND?
+
+- intent: regret
+  examples: |
+    - I want to know the consequences on ppd
+    - What happens when ppd is not treated
+    - What is the worse case scenario is ppd is not treated
+
+- intent: outcomes
+  examples: |
+    - could you tell me the prognosis for postpartum depression?
+    - give me the possible outcome of ppd
 
 - intent: affirm
   examples: |
@@ -97,14 +139,6 @@ nlu:
     - How is PND different from baby blues?
     - What are the distinguishing features of PND?
     - How can I tell if I have PND or baby blues?
-
-- intent: diagnosis
-  examples: |
-    - How is PND diagnosed?
-    - What are the diagnostic criteria for PND?
-    - What tests are used to diagnose PND?
-    - How do I know if I have PND?
-
 
 - intent: impact
   examples: |
@@ -265,3 +299,35 @@ nlu:
     - I am struggling to take care of myself
     - Can you suggest some ways to take better care of myself?
     - What can I do to improve my self-care?
+
+- intent: learn_more
+  examples: |
+    - Learn more about ppd
+    - Learn more
+    - Resources to learn more about ppd
+
+- intent: blues
+  examples: |
+    - Definition of baby blues
+    - baby blues
+    - the meaning of baby blues
+
+- intent: differences
+  examples: |
+    - Is baby blues same as ppd?
+    - Is ppd same as baby blues
+    - I s baby blues and ppd similar
+
+- intent: body_change
+  examples: |
+    - My body has changes, I am becoming fat
+    - I feel fat
+    - I don't like my body.
+    - I'm increasing in weight
+    - People are saying that am fat
+    - I hate my baby weight
+    - Can I get to my previous body weight
+
+- intent: error_response
+  examples: |
+    - ""
