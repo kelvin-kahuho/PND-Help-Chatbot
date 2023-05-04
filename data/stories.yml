@@ -19,11 +19,23 @@ stories:
     - intent: thanks
     - action: utter_thanks
 
-  # affirm
-  - story: affirm
+  # about
+  - story: about
     steps:
-    - intent: affirm
-    - action: utter_affirm
+    - intent: about
+    - action: utter_about
+
+  # help
+  - story: help
+    steps:
+    - intent: help
+    - action: utter_help
+
+  # ppd
+  - story: ppd
+    steps:
+    - intent: ppd
+    - action: utter_ppd
 
   # deny
   - story: deny
@@ -66,6 +78,30 @@ stories:
     steps:
     - intent: diagnosis
     - action: utter_diagnosis
+
+  # outcomes
+  - story: outcomes
+    steps:
+    - intent: outcomes
+    - action: utter_outcomes
+
+  # blues
+  - story: blues
+    steps: 
+    - intent: blues
+    - action: utter_blues
+
+  # differences
+  - story: differences
+    steps:
+    - intent: differences
+    - action: utter_differences
+
+  # body change
+  - story: body change
+    steps:
+    - intent: body_change
+    - action: utter_body_change
 
   # impact
   - story: impact
@@ -186,4 +222,16 @@ stories:
     steps:
     - intent: trouble_care
     - action: utter_trouble_care
- 
+
+
+  #Learn more
+  - story: learn more
+    steps:
+    - intent: learn_more
+    - action: utter_learn_more
+
+  #regret
+  - story: regret
+    steps:
+    - intent: regret
+    - action: utter_regret
