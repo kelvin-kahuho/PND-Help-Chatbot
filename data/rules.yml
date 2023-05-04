@@ -17,6 +17,21 @@ rules:
   - intent: thanks
   - action: utter_thanks
 
+- rule: Respond to about intent
+  steps:
+  - intent: about
+  - action: utter_about
+
+- rule: Respond to help intent
+  steps:
+  - intent: help
+  - action: utter_help
+
+- rule: Respond to ppd intent
+  steps:
+  - intent: ppd
+  - action: utter_ppd
+
 - rule: Respond to affirm intent
   steps:
   - intent: affirm
@@ -26,6 +41,27 @@ rules:
   steps:
   - intent: deny
   - action: utter_deny
+
+- rule: Respond to outcome intent
+  steps:
+  - intent: outcomes
+  - action: utter_outcomes
+
+
+- rule: Respond to blues intent
+  steps:
+  - intent: blues
+  - action: utter_blues
+
+- rule: Respond to differences intent
+  steps:
+  - intent: differences
+  - action: utter_differences
+
+- rule: Respond to body_change intent
+  steps:
+  - intent: body_change
+  - action: utter_body_change
 
 - rule: Respond to symptoms intent
   steps:
@@ -156,3 +192,18 @@ rules:
   steps:
   - intent: trouble_care
   - action: utter_trouble_care
+
+- rule: Respond to learn_more intent
+  steps:
+  - intent: learn_more
+  - action: utter_learn_more
+
+- rule: Respond to utter_regret
+  steps:
+  - intent: regret
+  - action: utter_regret
+
+- rule: Respond to utter_error_response
+  steps:
+  - intent: error_response
+  - action: utter_error_response
