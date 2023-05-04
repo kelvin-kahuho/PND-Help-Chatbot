@@ -4,8 +4,13 @@ intents:
   - greet
   - goodbye
   - thanks
+  - about
+  - help
+  - ppd
   - affirm
   - deny
+  - regret
+  - outcomes
   - symptoms
   - common
   - risk_factors
@@ -32,6 +37,11 @@ intents:
   - no_talk
   - no_support
   - trouble_care
+  - learn_more
+  - blues
+  - differences
+  - body_change
+  - error_response
 
 entities:
   - symptom
@@ -39,19 +49,52 @@ entities:
 responses:
   utter_greet:
   - text: "Hello! How can I assist you today?"
+  - text: "Hello"
+  - text: "Hi"
+  - text: "Hi there"
   
   utter_goodbye:
   - text: "Goodbye! Take care of yourself and your baby."
+  - text: "See you later."
+  - text: "Have a nice day."
+  - text: "Come back again"
   
   utter_thanks:
   - text: "You're welcome! I'm here to help anytime."
+  - text: "Happy to help!"
+  - text: "Any time!"
+  - text: "My pleasure"
+  - text: "You're most welcome!"
   
+  utter_about:
+  - text: "I am Momma, your assistant. How can I help you today."
+  - text: "I am Momma, an artificial Intelligent bot designed to help women with PPD/PND or have symptoms"
+  
+  utter_help:
+  - text: "Tell me how I can assist you"
+  - text: "Tell me your problem to assist you"
+  - text: "How can I support you"
+
+  utter_ppd:
+  - text: "Postpartum depression is a mood disorder that affects parents after the birth of a new baby.There are many different reasons that a new parent can develop postpartum depression, including genetics, childhood trauma, or current environment.Some of the symptoms re as follows:appetite and sleep problems, difficulty concentrating and making decisions, lack of interest in the baby, irritation or anger or rage, withdrawal from interacting with others, sadness and crying, the constant feeling of being overwhelmed, and/or possible thoughts of harming oneself or running away and escaping"
+
+  utter_diagnosis:
+  - text: "PPD is diagonised through edinburgh postpartum depression scale.Would you like to learn more about the diagnosis process?"
+  - text: "you can use edinburgh postpartum depression scale to know if you have ppd. Would you like to learn more about the diagnosis process?"
+
+
   utter_affirm:
   - text: "I understand. Is there anything else you'd like to talk about?"
   
   utter_deny:
   - text: "That's okay. Let's try something else. What else can I help you with?"
+
+  utter_regret:
+  - text: "Untreated postpartum depression can last for several months or even years. The condition affects how the parent bonds with their child, which can affect the child’s mental health later in life. Intrusive thoughts or compulsions, especially suicidal or violent thoughts, or persistent thoughts involving death can lead to intense fear for the future and fear of oneself. In some cases, the new parent may act on these intrusive thoughts through self-harm or by harming their child.Relationships between partners and with other family members or friends can be damaged if postpartum depression goes untreated. The new parent could begin to self-medicate with alcohol or drugs, which can damage their mental and physical health in the long-term and, for breastfeeding mothers, can damage the child’s health too"
   
+  utter_outcomes:
+  - text: "People who experience depression in any form are more likely to develop postpartum depression when they have a child. Additionally, once a person experiences postpartum depression, they are more likely to develop the condition if they have another child. Children of parents who experienced postpartum depression are more likely to develop this mental condition themselves when they have children."
+
   utter_symptoms:
   - text: "Some common symptoms of PND include sadness, irritability, fatigue, and difficulty bonding with your baby. Have you been experiencing any of these?"
   
@@ -66,10 +109,7 @@ responses:
   
   utter_difference:
   - text: "PND is similar to other forms of depression, but it's specifically related to the experience of having a new baby. Would you like to learn more about the differences?"
-  
-  utter_diagnosis:
-  - text: "A diagnosis of PND typically involves a physical exam, a review of your symptoms, and possibly a questionnaire. Would you like to learn more about the diagnosis process?"
-  
+    
   utter_impact:
   - text: "PND can have a significant impact on your life, but with the right treatment and support, it's possible to recover. Would you like to learn more?"
   
@@ -142,6 +182,21 @@ responses:
   - text: "It sounds like you might be having a tough time caring for yourself and your baby right now. Is there anything specific that you're struggling with?"
   - text: "Caring for a new baby is challenging, especially when dealing with PND. What kind of difficulties have you been experiencing?"
 
+  utter_learn_more:
+  - text: "To learn more about PPD, click the link - https://www.mayoclinic.org/diseases-conditions/postpartum-depression/symptoms-causes/syc-20376617" 
+  - text: "Find resources to learn more about ppd here- https://www.postpartumdepression.org/resources/"
+
+  utter_blues:
+  - text: "Baby blues are feelings of sadness that you may have in the first few days after having a baby. Symptoms of the baby blues include:feeling weepy or crying inexplicably over minor triggers,having mood swings or being especially irritable,feeling unattached or unbonded to your baby,missing parts of your old life, like the freedom to go out with friends,worrying or feeling anxious about your baby’s health and safety,feeling restless or experiencing insomnia, even though you’re exhausted,having trouble making easy decisions or thinking clearly."
+
+  utter_differences:
+  - text: "No,if you’re still feeling sad, anxious, or overwhelmed after 2 weeks postpartum, you may have postpartum depression since baby blues typically don’t last longer than 2 weeks."
+
+  utter_body_change:
+  - text: "That's just baby fat but with a good fitness routine you'll be back to shape within no time. Don't worry, checkout 'https://www.stephaniemwaura.com' for free postpartum fitness and you'll be good to go within no time."
+
+  utter_error_response:
+  - text: "I'm sorry I don't understand, can you rephrase that?"
 
 session_config:
   session_expiration_time: 60
